@@ -1,0 +1,77 @@
+// Variable de couleurs
+$blue_memo: #3333ff;
+$blue_dark_memo: rgb(5, 5, 77);
+
+// Liens
+a {
+  color: $blue_memo;
+  // nesting
+  &:hover {
+    color: $blue_dark_memo;
+  }
+  #boutons-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+h1 {
+  display: table;
+  margin: 0 auto;
+}
+
+// Selection des divs qui appartiennent à la class div-h1 dans le header/
+header div.div-h1 {
+  display: flex;
+}
+
+nav {
+  ul {
+    justify-content: center;
+    display: flex;
+    section {
+      flex-grow: 1;
+      flex-basis: 0;
+      margin: 0 0.5%;
+      article {
+        padding: 10px;
+        border-radius: 8px;
+        color: white;
+      }
+    }
+  }
+}
+
+// boutons de menu
+nav {
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+// colonnes
+
+main {
+  display: flex;
+  section {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 0.5%;
+    h3 {
+      &:before {
+        content: "+";
+        color: white;
+        background-color: $warning;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        margin: 20px;
+      }
+    }
+    article {
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+    }
+  }
+}
